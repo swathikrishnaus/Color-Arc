@@ -44,22 +44,32 @@ body{
     background: #fff;
     box-shadow: 0 0 2px rgba(0,0,0,0.8) inset;
 }
+
+
 .search-wrapper .dropdown li {
     overflow: visible;
     position: relative;
     border: 0;
     padding: 0;
     font-size: 12px;
-}  
+} 
+.search-wrapper .dropdown li a:hover{
+    background-color: none;
+}
+
+.search-wrapper .dropdown li:hover, .search-wrapper .dropdown li:focus, .search-wrapper .dropdown li.active{
+    color: #BD3840;
+}
 
 .search-wrapper  .nav-item .dropdown-menu{
     margin-left: -100px;
 }
-.search-wrapper button:active,
+
+/* .search-wrapper button:active,
 .search-wrapper button:focus{  
     background: #198cff;
     outline: 0;  
-}
+} */
 
 .search-wrapper button:focus:before,
 .search-wrapper button:active:before{
@@ -72,6 +82,9 @@ body{
 }  
 
 @media(max-width: 991px){
+    .search-wrapper{
+        margin-bottom: 20px;
+    }
     .search-wrapper input{
         width: 200px;
     }
@@ -80,13 +93,8 @@ body{
 
 
 
-
-
-
-
-
-
 /* ---------------------------------toggle button css start--------------------------------------- */
+
 
 
 .navbar-toggler {
@@ -154,7 +162,7 @@ body{
  
   
   
-  /* -------------------------------------------toggle button css end-------------------------------------------- */
+/* -------------------------------------------toggle button css end-------------------------------------------- */
   
 
 
@@ -162,6 +170,9 @@ body{
 
 /* ----------------------------------Common css start------------------------------------------ */
 
+.nav-link-color:hover, .nav-link-color:focus, .nav-link-color.active{
+    color: #DB3D3D;
+}
 .nav-link-color{
     color: #928f8f;
     font-size: 12px;
@@ -196,6 +207,7 @@ body{
     color: #797474;
     transition: 0.3s ease;
 }
+
 .navbar-nav i:hover{
     color: #DB3D3D;
 }
@@ -218,6 +230,12 @@ body{
         display: inline;
         float: left;
     }
+    .navbar .navbar-nav{
+        display: inline;
+    }
+    .navbar .navbar-nav {
+        width: 50px;
+    }
   }
   
 
@@ -230,7 +248,8 @@ body{
 
 
 .product-navbar{
-    margin-top: 20px;
+    margin-top: 130px;
+    z-index: 1;
 }
 .product-navbar hr{
     color: rgb(223, 206, 206);
@@ -325,7 +344,7 @@ body{
 /* ----------------------------------Home start------------------------------------------ */
 
 .home{
-    margin-top: 70px;
+    margin-top: 250px;
 }
 .home .home-texts{
     margin-top: 120px;
@@ -420,6 +439,7 @@ body{
     display: block;    
     font-size: 18px;
     color: #CBC2C2;
+    transition: 0.5s ease;
 }
 .popular-products .product-cards .card .wishlist i:hover, .popular-products .product-cards .card .wishlist i:focus, .popular-products .product-cards .card .wishlist i.active{
     color: #DB3D3D;
@@ -474,6 +494,10 @@ body{
         margin: 0 auto;
         margin-top: 10px;
     }
+    .popular-products .product-cards .card .product-card-img-bg img{
+        width: 200px;
+        height: auto;
+    }
 }
 
 
@@ -489,7 +513,7 @@ body{
 
 
 .popular-products-page{
-    margin-top: 150px;
+    margin-top: 280px;
 }
 .popular-products-page .product-cards{
     margin-top: 50px;
@@ -560,9 +584,16 @@ body{
     
 }
 @media(max-width: 991px){
+    .popular-products-page .product-cards{
+        margin-top: 30px;
+    }
     .popular-products-page .card{
         margin: 0 auto;
         margin-top: 10px;
+    }
+    .popular-products-page .product-cards .card .product-card-img-bg img{
+        width: 200px;
+        height: auto;
     }
 }
 
@@ -572,6 +603,103 @@ body{
 
 /* ---------------------------------------sidebar start------------------------------------------- */
 
+
+/* Fixed sidenav, full height */
+.popular-products-page .sidenav {
+    height: 100%;
+    width: 300px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+  }
+  .sidebar .form-check-input:checked{
+    background-color: red;
+  }
+   .sidenav .form-check {
+    margin-left: 20px;
+  }
+  .sidenav .form-check-label, .sidenav .form-check-input{
+    cursor: pointer;
+  }
+  .sidenav h6, .sidenav .form-check{
+    padding: 6px 8px 6px 16px;
+  }
+  .sidenav .clear-all{
+    color: #1123c0!important;
+  }
+  .sidenav .clear-all:hover{
+    color: #818181!important;
+  }
+  .sidenav a{
+    color: #726c6d;
+  }
+  /* Style the sidenav links and the dropdown button */
+  .sidenav a, .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    /* font-size: 20px; */
+    display: block;
+    border: none;
+    background: none;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
+  .sidenav .dropdown-btn{
+    width: 100%;
+    font-size: 14px;
+    font-weight: bold;
+    color: #1f1c1c;
+  }
+  
+  /* On mouse-over */
+  .sidenav a:hover, .dropdown-btn:hover {
+    color: #111010;
+  }
+  
+  /* Main content */
+
+  /* Add an active class to the active dropdown button */
+  .active {
+    color: #111010;
+  }
+  
+  /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+  .dropdown-container {
+    display: none;
+    width: 100%;
+    padding-left: 8px;
+  }
+  
+  /* Optional: Style the caret down icon */
+  .fa-angle-down:before{
+    font-size: 16px;
+  }
+  .fa-angle-down {
+    float: right;
+    padding-right: 8px;
+  }
+  
+  @media(max-width: 991px){
+    .popular-products-page{
+        padding: 10px;
+    }
+    .popular-products-page .product-cards .card{
+        width: auto;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+    .popular-products-page .sidenav{
+        display: flex;
+        overflow: scroll;
+        width: auto;
+        margin: 0 auto;
+        padding: 0;
+        box-shadow: 0;
+        border-radius: 0;
+    }
+  }
 
 /* ---------------------------------------sidebar end------------------------------------------------ */
 
@@ -748,3 +876,6 @@ body{
 
 /* ----------------------------------footer end------------------------------------------ */
 
+.rotate-180{
+    transform: rotate(180deg)!important;
+}
