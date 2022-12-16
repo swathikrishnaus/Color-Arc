@@ -186,11 +186,12 @@ body{
     padding: 10px 30px;
     border-radius: 30px;
     border: 0;
-    transition: 0.5
-    s ease all;
+    transition: 0.7s ease all;
+    border: 1px solid #D4212C;
 }
 .button-style:hover{
-    background-image: linear-gradient(to right top, #dd4852, #be4a52, #f0fc82);
+    background-image: linear-gradient(to right top, #dd4852, #be4a52, #fc8292);
+    
 }
 .head-color{
     color: #201A1A;
@@ -876,6 +877,40 @@ body{
 
 /* ----------------------------------footer end------------------------------------------ */
 
-.rotate-180{
+/* .rotate-180{
     transform: rotate(180deg)!important;
 }
+ */
+
+
+/* ----------------------------------wishlist start------------------------------------------ */
+
+.my-wishlist{
+    margin-top: 150px;
+}
+.my-wishlist img{
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+}
+.my-wishlist hr{
+    color: #ada6a7;
+}
+.wishlist-items{
+    margin-top: 50px;
+}
+.wishlist-head{
+    margin-top: 100px;
+}
+@media(max-width: 991px){
+    /* .wishlist h4{
+        margin-top: 2px!important;
+    } */
+    .my-wishlist{
+        justify-content: center;
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+/* ----------------------------------wishlist end------------------------------------------ */
