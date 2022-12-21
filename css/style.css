@@ -1169,3 +1169,74 @@ body{
 
 
 
+/* ----------------------------------customer-service start------------------------------------------ */
+
+.customer-service{
+    margin-top: 200px;
+}
+.customer-service form{
+    background-color: rgb(255, 255, 255);
+    margin-top: 30px;
+    padding: 50px;
+    border-radius: 20px;
+}
+.customer-service form input, .customer-service form textarea{
+    padding: 10px;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid rgb(233, 230, 230);
+}
+.customer-service .contact-service{
+    margin-top: 50px;
+}
+.customer-service .location-details svg{
+    width: 30px;
+    height: auto;
+}
+.customer-service .location-details{
+    margin-top: 50px;
+}
+.customer-service .socialmedia i{
+    font-size: 20px;
+    color: #201A1A;
+    transition: 0.3s ease;
+}
+.customer-service .socialmedia i:hover{
+    color: #574e4e;
+}
+.customer-service .call-email a{
+   color: #201A1A;
+   text-decoration: none;
+}
+.customer-service .call-email a:hover{
+    color: #574e4e;
+}
+.customer-service .contact-form{
+    margin-top: 100px;
+}
+@media(max-width: 991px){
+    .customer-service{
+        padding: 10px;
+    }
+    .customer-service .contact-form{
+        margin-top: 20px;
+    }
+    .customer-service form{
+        padding: 10px;
+    }
+    .location-details{
+        text-align: center;
+    }
+    .customer-service .call-svg{
+        margin-top: 20px;
+    }
+    .customer-service iframe{
+        width: auto;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+
+/* ----------------------------------customer-service end------------------------------------------ */
