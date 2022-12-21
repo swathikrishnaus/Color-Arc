@@ -993,3 +993,179 @@ body{
 }
 
 /* ----------------------------------wishlist end------------------------------------------ */
+
+
+
+
+
+
+/* ----------------------------------my-profile start------------------------------------------ */
+
+.bg-color-body{
+    background-color: #eceaea;
+
+}
+.my-profile{
+    padding-top: 200px;
+}
+.my-profile .profile-banner{
+    background-color: #f6f7fa;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.my-profile .profile-banner .img-bg{
+    width: 150px;
+    height: 150px;
+    background-color: rgb(192, 236, 234);
+    margin: 0 auto;
+    border-radius: 50%;
+}
+.my-profile .profile-banner .img-bg img{
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 50%
+}
+.my-profile .profile-banner hr{
+    color: #c2bbbc;
+}
+.my-profile .profile-banner .profile-links {
+    margin: 0 auto;
+    display: block;
+}
+
+.my-profile .profile-banner a{
+    text-decoration: none;
+     color: #201A1A;
+}
+.my-profile .profile-banner i{
+    font-size: 16px;
+    color: #6d6565;
+}
+.my-profile .profile-banner a:hover{
+    color: #000000;
+    font-weight: bold;
+}
+.my-profile .profile-banner a:hover i{
+    color: #000000;
+}
+.my-profile .profile-info{
+    background-color: white;
+    padding: 50px;
+    width: 90%;
+}
+.my-profile .update-details{
+    background-color: #ada6a7;
+}
+.my-profile .contact-info{
+    background-color: white;
+    padding: 50px;
+    width: 90%;
+}
+.my-profile .security-info{
+    background-color: white;
+    padding: 50px;
+    width: 90%;
+}
+.my-profile .delete-account{
+    text-decoration: none;
+    margin-top: 12px;
+    font-size: 15px;
+    color: #D4212C;
+}
+.my-profile .delete-account:hover{
+    text-decoration: underline;
+}
+.my-profile input, .my-profile textarea, .my-profile select{
+    padding: 10px;
+    font-size: 13px;
+    
+}
+.my-profile .profile-info .img-bg{
+    width: 150px;
+    height: 150px;
+    background-color: rgb(192, 236, 234);
+    /* margin: 0 auto; */
+    border-radius: 50%;
+}
+.my-profile .profile-info .img-bg img{
+    width: 150px;
+    height: 150px;
+    /* margin: 0 auto;
+    display: block; */
+    border-radius: 50%;
+}
+.my-profile select option, .my-profile input::placeholder{
+    font-size: 13px;
+}
+.update-photo{
+    text-decoration: none;
+    /* margin-top: 20px; */
+    font-size: 15px;
+    color: #1f4bdd;
+}
+.my-profile .update-photo:hover{
+    text-decoration: underline;
+}
+@media(max-width: 991px){
+    .my-profile{
+        padding: 10px;
+        margin-top: 150px;
+    }
+    .my-profile .profile-banner .profile-links {
+        display: flex;
+        overflow: scroll;
+        /* width: auto;
+        margin: 0 auto; */
+    }
+    .my-profile .profile-banner .profile-links a{
+        margin-right: 20px;
+        text-align: center;
+    }
+    .my-profile .profile-link-bg{
+        background-color: rgb(255, 255, 255);
+        margin-right: 10px;
+        padding: 10px;
+        justify-content: center;
+        border-radius: 15px;
+        border: 1px solid #e4dfe0;
+    }
+    .my-profile .profile-info{
+        width: 100%;
+    }
+    .my-profile .contact-info{
+        width: 100%;
+    }
+    .my-profile .security-info{
+        width: 100%;
+    }
+    .my-profile h5{
+        text-align: center;
+    }
+    .my-profile .profile-info .img-bg{
+        margin: 0 auto;
+    }
+    .my-profile .profile-info .img-bg img{
+        margin: 0 auto;
+        display: block;
+    }
+    .my-profile .edit-profile{
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .my-profile button{
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+
+/* ----------------------------------my-profile end------------------------------------------ */
+
+
+
+
