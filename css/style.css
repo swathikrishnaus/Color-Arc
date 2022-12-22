@@ -1240,3 +1240,167 @@ body{
 
 
 /* ----------------------------------customer-service end------------------------------------------ */
+
+
+
+
+
+/* ----------------------------------my-orders start------------------------------------------ */
+
+
+.my-orders{
+    margin-top: 200px;
+}
+.my-orders .check-box-banner{
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+.my-orders .check-box-banner hr, .my-orders .order-items-banner hr{
+    color: #ccc7c7;
+}
+.my-orders .check-box-banner a{
+    text-decoration: none;
+    color: #201A1A;
+}
+.my-orders .form-check .form-check-input, .my-orders .form-check .form-check-label{
+    cursor: pointer;
+}
+.my-orders .search input{
+    padding: 15px;
+    /* width: 500px; */
+    border: 0;
+    border-radius: 20px;
+}
+.my-orders .search input::placeholder{
+    font-size: 13px;
+}
+.my-orders .input-group{
+    width: 650px;
+    margin: 0 auto;
+}
+.my-orders .search button{
+    border: 0;
+    background-color: #33191a;
+    border-radius: 20px;
+    color: white;
+    transition: 0.3s ease;
+}
+.my-orders .search button:hover{
+    background-color: #494343;
+}
+.my-orders .order-section{
+    margin-top: 30px;
+}
+.my-orders .order-items-banner{
+    background-color: #fff;
+    padding: 20px;
+}
+.my-orders .order-items-banner a{
+    text-decoration: none;
+}
+@media(max-width: 991px){
+    .my-orders .input-group{
+        margin-top: 20px;
+    }
+    .my-orders .input-group{
+        width: auto;
+    }
+    .my-orders .filters{
+        display: flex;
+        overflow: scroll;
+    }
+    .my-orders .form-check{
+        margin-right: 15px;
+    }
+}
+
+
+
+/* ----------------------------------my-orders end------------------------------------------ */
+
+
+
+
+/* ----------------------------------product-details start------------------------------------------ */
+
+.product-details{
+    margin-top: 200px;
+}
+.product-details .buy-now{
+    background-color: #e76f6f;
+    border:  #e76f6f;
+}
+.product-details .rate-color{
+    color: #e76f6f;
+}
+.product-details .product-info{
+    margin-top: 100px;
+}
+.product-details .heart{
+    background-color: transparent;
+}
+.product-details .heart:hover, .product-details .heart:focus, .product-details .heart.active{
+    background-color: #D4212C;
+}
+.product-details .heart:hover i, .product-details .heart:focus i, .product-details .heart.active i{
+    color: white;
+}
+.product-details .heart i{
+    color: #D4212C;
+}
+.product-details .rateview-button{
+    background-color: #26A541;
+    border: 0;
+    padding: 5px 15px;
+    border-radius: 15px;
+    color: white;
+    transition: 0.3s ease;
+}
+
+.product-details .client-rateview-button{
+    background-color: #26A541;
+    border: 0;
+    /* padding: 5px 15px; */
+    border-radius: 15px;
+    color: white;
+    font-size: 12px;
+    transition: 0.3s ease;
+}
+
+.product-details .rateview-button:hover{
+    opacity: 0.7;
+}
+
+.product-details .rate-button{
+    background-color: #076b1d;
+    border: 0;
+    padding: 5px ;
+    border-radius: 15px;
+    color: white;
+    transition: 0.3s ease;
+}
+.product-details .size button{
+    padding: 10px;
+    background-color: transparent;
+    border: 0.5px solid rgb(202, 195, 195);
+}
+.product-details{
+    color: #a5a1a1;
+}
+.product-details .rate-button{
+    background-color: #2276e4;
+    padding: 10px 30px;
+    border: 0;
+    border-radius: 20px;
+    color: white;
+}
+.product-details .rating-review .client-name{
+    margin-top: 3px;
+}
+.product-details .view-review{
+    font-size: 15px;
+    text-decoration: none;
+}
+
+/* ----------------------------------product-details end------------------------------------------ */
