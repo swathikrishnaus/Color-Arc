@@ -23,20 +23,29 @@ function myFunction() {
   // --------------------Profile password end----------------------------
 
 
-
+  // jQuery(document).ready(function($){
+  //   $(".show-more-btn").click(function(e){
+  //     $(".show-more-item:hidden").slice(0,3).fadeIn();
+  //     if ($(".show-more-item:hidden").length < 1) $(this).fadeOut();
+  //   })
+  // })
 
 
 // ----------------------product-details read-more button----------------------------
 
-$('.view-review').click(function() {
-  $('.more-reviews').slideToggle();
-  if ($('.view-review').text() == "View all Reviews") {
-    $(this).text("View less Reviews")
-  } else {
-    $(this).text("View all Reviews")
-  }
+
+$('#show-more-content').hide();
+
+$('#show-more').click(function(){
+	$('#show-more-content').show(300);
+	$('#show-less').show();
+	$('#show-more').hide();
 });
 
-
+$('#show-less').click(function(){
+	$('#show-more-content').hide(150);
+	$('#show-more').show();
+	$(this).hide();
+});
 // ----------------------product-details read-more button----------------------------
 

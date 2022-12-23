@@ -1424,8 +1424,8 @@ body{
 .product-details .rating-review .client-name{
     margin-top: 3px;
 }
-.product-details .view-review{
-    font-size: 15px;
+.product-details #show-more  .view-review, .product-details #show-less  .view-review{
+    /* font-size: 15px; */
     text-decoration: none;
 }
 /* .product-details .product-image img{
@@ -1434,5 +1434,63 @@ body{
 .product-details .more-reviews{
     display: none;
 }
+@media(max-width: 991px){
+    .product-details{
+        padding: 10px;
+        text-align: center;
+        margin-top: 150px;
+    }
+    .product-details .product-item{
+        margin-top: 50px;
+    }
+    .product-details .rateview-button{
+        padding: 5px 10px;
+        border-radius: 15px;
+        font-size: 12px;
+        display: flex;
+        margin-top: 2px;
+    }
+    .product-details .rateview-button i{
+        margin-top: 2px;
+        margin-right: 2px;
+    }
+    .product-details .rate-product{
+        font-size: 12px;
+        padding: 5px 15px;
+    }
+    .product-details .client-reviews img{
+        width: 200px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+    .product-details hr{
+        margin: 0 auto;
+    }
+    .product-details a{
+        text-decoration: none;
+    }
+    .product-details .rateview-button{
+        margin: 0 auto;
+    }
+    .product-details .buy-buttons{
+        justify-content: center;
+    }
+    .product-details .size .input-group{
+        justify-content: center;
+    }
+    .product-details .margin-hr{
+        margin-bottom: 50px;
+    }
+    .product-details .review-client-name{
+        justify-content: center;
+    }
+    .product-details .product-info{
+        margin-top: 50px;
+    }
+
+}
 
 /* ----------------------------------product-details end------------------------------------------ */
+
+
