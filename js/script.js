@@ -24,3 +24,19 @@ function myFunction() {
 
 
 
+
+
+// ----------------------product-details read-more button----------------------------
+
+$('.view-review').click(function() {
+  $('.more-reviews').slideToggle();
+  if ($('.view-review').text() == "View all Reviews") {
+    $(this).text("View less Reviews")
+  } else {
+    $(this).text("View all Reviews")
+  }
+});
+
+
+// ----------------------product-details read-more button----------------------------
+

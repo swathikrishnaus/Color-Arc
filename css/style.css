@@ -1299,7 +1299,26 @@ body{
 .my-orders .order-items-banner a{
     text-decoration: none;
 }
+.my-orders u{
+    margin-top: 10px;
+    /* border-bottom:0.5px solid #000; */
+}
+.my-orders .icon-color{
+    color: #e76f6f;
+}
+.my-orders .icon-color i{
+    font-size: 15px;
+}
+.my-orders .ordered{
+    color: #e76f6f;
+    font-size: 12px;
+}
+
 @media(max-width: 991px){
+    .my-orders{
+        padding: 10px;
+        text-align: center;
+    }
     .my-orders .input-group{
         margin-top: 20px;
     }
@@ -1313,6 +1332,13 @@ body{
     .my-orders .form-check{
         margin-right: 15px;
     }
+    /* .my-orders .margin-u-top{
+        margin-top: 15px;
+    } */
+    /* .my-orders .order-product-info{
+        display: flex;
+        overflow: scroll;
+    } */
 }
 
 
@@ -1401,6 +1427,12 @@ body{
 .product-details .view-review{
     font-size: 15px;
     text-decoration: none;
+}
+/* .product-details .product-image img{
+    position: fixed;
+} */
+.product-details .more-reviews{
+    display: none;
 }
 
 /* ----------------------------------product-details end------------------------------------------ */
