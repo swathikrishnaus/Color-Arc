@@ -23,12 +23,7 @@ function myFunction() {
   // --------------------Profile password end----------------------------
 
 
-  // jQuery(document).ready(function($){
-  //   $(".show-more-btn").click(function(e){
-  //     $(".show-more-item:hidden").slice(0,3).fadeIn();
-  //     if ($(".show-more-item:hidden").length < 1) $(this).fadeOut();
-  //   })
-  // })
+
 
 
 // ----------------------product-details read-more button----------------------------
@@ -49,3 +44,29 @@ $('#show-less').click(function(){
 });
 // ----------------------product-details read-more button----------------------------
 
+
+
+
+
+
+// ----------------------Review rating stars----------------------------
+
+let startsbox = document.querySelectorAll('.starbox')
+startsbox.forEach((box) => {
+  let stars = box.querySelectorAll('svg')
+  stars.forEach((star, index, arr) => {
+    star.addEventListener('click', function() {
+      let current = index;
+      arr.forEach((_star, _index) => {
+        if (_index <= current) {
+          _star.style.fill = '#ffbb00'
+        } else {
+          _star.style.fill = '#a09f9f'
+        }
+      })
+
+    })
+  })
+})
+
+// ----------------------Review rating stars----------------------------
