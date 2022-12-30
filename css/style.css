@@ -1313,6 +1313,17 @@ body{
     color: #e76f6f;
     font-size: 12px;
 }
+.my-orders .exchange-options .color-1{
+    color: #1f4bdd;
+    transition: 0.3s ease;
+}
+.my-orders .exchange-options .color-2{
+    color: #9b071a;
+    transition: 0.3s ease;
+}
+.my-orders .exchange-options a:hover{
+    opacity: 0.7;
+}
 
 @media(max-width: 991px){
     .my-orders{
@@ -1328,6 +1339,9 @@ body{
     .my-orders .filters{
         display: flex;
         overflow: scroll;
+    }
+    .my-orders .exchange-options{
+        justify-content: center;
     }
     .my-orders .form-check{
         margin-right: 15px;
@@ -1593,3 +1607,111 @@ body{
 }
 
 /* ----------------------------------my-profile end------------------------------------------ */
+
+
+
+
+
+/* ----------------------------------shipping start------------------------------------------ */
+
+.shipping{
+    margin-top: 200px;
+}
+.shipping .hh-grayBox {
+	/* background-color: #F8F8F8; */
+	margin-bottom: 20px;
+	padding: 35px;
+  margin-top: 20px;
+}
+.shipping  .deliverd-pdt{
+    padding: 20px;
+    background-color: white;
+}
+.shipping .pt45{padding-top:45px;}
+.shipping .order-tracking{
+	text-align: center;
+	width: 33.33%;
+	position: relative;
+	display: block;
+}
+.shipping .order-tracking .is-complete{
+	display: block;
+	position: relative;
+	border-radius: 50%;
+	height: 30px;
+	width: 30px;
+	border: 0px solid #d8d8d8;
+	background-color: #d8d8d8;
+	margin: 0 auto;
+	/* transition: background 0.25s linear;
+	-webkit-transition: background 0.25s linear; */
+	z-index: 2;
+}
+.shipping .order-tracking .is-complete:after {
+	display: block;
+	position: absolute;
+	content: '';
+	height: 14px;
+	width: 7px;
+	top: -2px;
+	bottom: 0;
+	left: 5px;
+	margin: auto 0;
+	border: 0px solid #AFAFAF;
+	border-width: 0px 2px 2px 0;
+	transform: rotate(45deg);
+	opacity: 0;
+}
+.shipping .order-tracking.completed .is-complete{
+	border-color: #27aa80;
+	border-width: 0px;
+	background-color: #27aa80;
+}
+.shipping .order-tracking.completed .is-complete:after {
+	border-color: #fff;
+	border-width: 0px 3px 3px 0;
+	width: 7px;
+	left: 11px;
+	opacity: 1;
+}
+.shipping .order-tracking p {
+	color: #A4A4A4;
+	font-size: 15px;
+	margin-top: 8px;
+	margin-bottom: 0;
+	line-height: 20px;
+}
+.shipping .order-tracking p span{font-size: 12px;}
+.shipping .order-tracking.completed p{color: #000;}
+.shipping .order-tracking::before {
+	content: '';
+	display: block;
+	height: 3px;
+	width: calc(100% - 40px);
+	background-color: #d8d8d8;
+	top: 13px;
+	position: absolute;
+	left: calc(-50% + 20px);
+	z-index: 0;
+}
+.shipping .order-tracking:first-child:before{display: none;}
+.shipping .order-tracking.completed:before{background-color: #27aa80;}
+@media(max-width: 991px) {
+    .shipping{
+        text-align: center;
+        padding: 10px;
+    }
+    .shipping .col-top{
+        margin-top: 10px;
+    }
+    .hh-grayBox {
+        margin-top: 10px;
+    }
+}
+
+
+/* ----------------------------------shipping end------------------------------------------ */
+
+
+
+
