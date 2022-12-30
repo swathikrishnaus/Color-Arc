@@ -1524,3 +1524,72 @@ body{
 }
 
 /* ----------------------------------review-star end------------------------------------------ */
+
+
+
+
+
+/* ----------------------------------my-profile start------------------------------------------ */
+
+.my-profile{
+    margin-top: 50px;
+}
+.my-profile img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+}
+.my-profile .my-profile-page{
+    margin: 0 auto;
+    margin-top: 50px;
+    justify-content: center;
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px; */
+    padding: 20px;
+    text-align: justify;
+}
+.my-profile .my-profile-page .info{
+    justify-content: center;
+}
+.my-profile .my-profile-page  .all-details{
+    justify-content: center;
+}
+.my-profile .my-profile-page hr{
+    width: 70%;
+    color: #b4b1b1;
+    margin: 0 auto;
+}
+.my-profile .my-profile-page .fields{
+    width: 70%;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    padding: 20px;
+    margin: 0 auto;
+    display: block;
+}
+.my-profile .my-profile-page .profile-name{
+    margin-left: 50px;
+    margin-top: 55px;
+}
+.my-profile .my-profile-page  .about-bio p{
+    width: 75%;
+}
+.my-profile .my-profile-page a{
+    text-decoration: none;
+}
+
+@media(max-width: 991px){
+    .my-profile .my-profile-page hr{
+        width: 100%;
+    }
+    .my-profile .my-profile-page .fields{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .my-profile .my-profile-page  .about-bio p{ 
+        width: 100%;
+    }
+}
+
+/* ----------------------------------my-profile end------------------------------------------ */
